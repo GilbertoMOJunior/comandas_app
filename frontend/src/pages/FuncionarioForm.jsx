@@ -232,7 +232,7 @@ const FuncionarioForm = () => {
               rules={
                 isEdit
                   ? {
-                      minLength: { value: 6, message: 'Senha deve ter pelo menos 6 caracteres' },
+                      minLength: { value: 5, message: 'Senha deve ter pelo menos 5 caracteres' },
                     }
                   : validationRules.senha
               }
@@ -240,7 +240,7 @@ const FuncionarioForm = () => {
                 <TextField
                   {...field}
                   label={isEdit ? 'Nova Senha (opcional)' : 'Senha'}
-                  placeholder={isEdit ? 'Deixe em branco para manter' : 'Mínimo 6 caracteres'}
+                  placeholder={isEdit ? 'Deixe em branco para manter' : 'Mínimo 5 caracteres'}
                   fullWidth
                   required={!isEdit}
                   type={showPassword ? 'text' : 'password'}

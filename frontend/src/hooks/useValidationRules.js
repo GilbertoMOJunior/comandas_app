@@ -47,7 +47,7 @@ export const useValidationRules = () => ({
   },
   senha: {
     required: 'Senha é obrigatória',
-    minLength: { value: 6, message: 'Senha deve ter pelo menos 6 caracteres' },
+    minLength: { value: 5, message: 'Senha deve ter pelo menos 5 caracteres' },
   },
   grupo: { required: 'Grupo é obrigatório' },
   descricao: {

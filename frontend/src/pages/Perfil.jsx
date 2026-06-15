@@ -25,6 +25,8 @@ const Perfil = () => {
           }}
         >
           <Avatar
+            src="/FormAcademia.jpg"
+            alt={usuario?.nome || 'Gilberto'}
             sx={{
               width: 140,
               height: 140,
@@ -33,6 +35,7 @@ const Perfil = () => {
               bgcolor: '#f59e0b',
               boxShadow: '0 8px 24px rgba(245, 158, 11, 0.3)',
               fontSize: 64,
+              border: '3px solid #f59e0b',
             }}
           >
             <AccountCircle sx={{ fontSize: 100 }} />

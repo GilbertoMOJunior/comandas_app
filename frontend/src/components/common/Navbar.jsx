@@ -20,6 +20,7 @@ import {
   Group,
   RestaurantMenu,
   Receipt,
+  ReceiptLong,
   PointOfSale,
   Logout,
   AccountCircle,
@@ -46,6 +47,7 @@ const Navbar = () => {
     { label: 'Produtos', icon: <RestaurantMenu />, path: '/produtos' },
     { label: 'Comandas', icon: <Receipt />, path: '/comandas' },
     { label: 'Caixa', icon: <PointOfSale />, path: '/caixa' },
+    { label: 'Histórico', icon: <ReceiptLong />, path: '/caixa/historico' },
   ];
 
   const handleDrawerToggle = () => {
@@ -159,7 +161,11 @@ const Navbar = () => {
               ))}
               <Tooltip title="Perfil" arrow>
                 <IconButton color="inherit" onClick={() => navigate('/perfil')}>
-                  <Avatar sx={{ width: 32, height: 32, bgcolor: '#f59e0b' }}>
+                  <Avatar
+                    src="/FormAcademia.jpg"
+                    alt="Gilberto"
+                    sx={{ width: 36, height: 36, border: '2px solid #f59e0b' }}
+                  >
                     <AccountCircle />
                   </Avatar>
                 </IconButton>
@@ -179,7 +185,11 @@ const Navbar = () => {
             <Box sx={{ display: { xs: 'flex', md: 'none' }, alignItems: 'center', gap: 1 }}>
               <Tooltip title="Perfil" arrow>
                 <IconButton color="inherit" onClick={() => navigate('/perfil')}>
-                  <Avatar sx={{ width: 32, height: 32, bgcolor: '#f59e0b' }}>
+                  <Avatar
+                    src="/FormAcademia.jpg"
+                    alt="Gilberto"
+                    sx={{ width: 36, height: 36, border: '2px solid #f59e0b' }}
+                  >
                     <AccountCircle />
                   </Avatar>
                 </IconButton>
